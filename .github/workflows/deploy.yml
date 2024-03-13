@@ -23,7 +23,7 @@ jobs:
             npm install
 
             # Puerto del servidor Node.js
-            NODE_PORT=3000
+            NODE_PORT=3001
 
             # Verifica si hay un servidor en ejecución en el puerto y lo apaga
             if lsof -i :$NODE_PORT | grep LISTEN > /dev/null
