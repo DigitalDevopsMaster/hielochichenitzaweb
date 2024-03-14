@@ -1,5 +1,5 @@
-import { initScrollIntegration, initV1 } from "http://lib.digitaldevops.com.mx/v1.js";
-// import { initScrollIntegration, initV1 } from "../vendor/v1.js";
+//import { initScrollIntegration, initV1 } from "http://lib.digitaldevops.com.mx/v1.js";
+import { initScrollIntegration, initV1 } from "../vendor/v1.js";
 
 initV1({
   style: 'webLayout',
@@ -7,6 +7,7 @@ initV1({
     companyName: "Hielo Chichén Itzá",
     email: "hielochichenitza@email.com",
     phone: "999 999999",
+    logo: "./assets/logo.png"
   },
   palette: {
     textColor: '#ffffff',                   // Blanco para texto principal
@@ -15,7 +16,7 @@ initV1({
     primaryColor: '#6699cc',                // Azul hielo (para bordes y elementos suaves)
     secondaryColor: '#ffffff',              // Blanco (para elementos adicionales)
     accentColor: '#99ccff',                 // Azul claro (color de acento principal)
-    accentSecondaryColor: '#00ff00',        // Verde brillante (color de acento adicional)
+    accentSecondaryColor: '#4CAF50',        // Verde brillante (color de acento adicional)
 
     backgroundColor: '#f0f8ff',             // Azul claro (fondo suave)
     backgroundSecondaryColor: '#c0d9e7',    // Azul medio (para áreas secundarias)
