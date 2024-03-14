@@ -1,0 +1,166 @@
+<style>
+    .column {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+</style>
+<div class="column">
+
+    <style>
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .contact .map {
+            min-width: 320px;
+            min-height: 400px;
+            flex: 1;
+        }
+        .contact .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .contact .contact-information {
+            min-width: 320px;
+            padding: 32px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact .email {
+            min-width: 320px;
+            padding: 32px;
+            gap: 32px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact .email h2 {
+            font-size: 30px;
+            text-align: center;
+            color: var(--accentColor2);
+        }
+        .contact .email form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact .email form label{
+            color: var(--accentColor2);
+            
+        }
+        .contact .email input[type="text"],
+        .contact .email textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            margin-bottom: 16px;;
+    
+        }
+        .contact .email input[type="text"] {
+        }
+        .contact .email input[type="submit"] {
+            background-color: var(--accentSecondaryColor);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .contact .email input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .contact .email .error {
+            color: red;
+        }
+    </style>
+
+    <style>
+        .image-container {
+            max-height: 450px;
+        }
+        .image-container img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .contact-information {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: white;;
+            justify-content: center; 
+        }
+
+        .contact-information .dscription-card {
+            gap: 32px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .contact-information .tagline {
+            font-size: 24px;
+            text-align: center;
+            line-height: 42px;
+            max-width: 1300px;
+            padding: 0 32px;
+            font-family: "Truculenta", sans-serif;
+        }
+
+        @media screen and (max-width: 600px) {
+            .contact-information .tagline {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    </style>
+    <div class="image-container">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipPpPkxmnn-82kfQ5ow3QfYljoBuFNtAjSux0JzP=w1080-h608-p-no-v0" alt="">
+    </div>
+    <div class="contact">
+        <div class="row">
+            <div class="contact-information">
+                <div class="dscription-card">
+                    <p class="tagline">
+                        Elaborado por: Roger Javier Navarrete Novelo.
+                        C-48A #405 x 43 y 45 Col Emiliano Zapata Oriente,
+                        Mérida, Yucatán. CP 97144. RFC: NANR790322A45
+                        Centro de Atención a Clientes: (999) 1148769
+                    </p>
+                </div>
+            </div>
+            <div class="email">
+                <h2>!Envíanos un e-mail!</h2>
+                <form id="contactForm" action="#" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre.." required>
+                    <div class="error" id="errorNombre"></div>
+            
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Tu email.." required>
+                    <div class="error" id="errorEmail"></div>
+            
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje.." style="height:200px" required></textarea>
+                    <div class="error" id="errorMensaje"></div>
+            
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1139.9798333289068!2d-89.58437466026542!3d20.98215800053171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5670d92027f6a5%3A0xacc17af5b173e522!2sC.%20Cuarenta%20Y%20Ocho%2C%20Emiliano%20Zapata%20Oriente%2C%20M%C3%A9rida%2C%20Yuc.!5e0!3m2!1ses-419!2smx!4v1710379400914!5m2!1ses-419!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+   
+</script>

@@ -22,6 +22,53 @@
         const test = () => {
             console.log('clik');
         }
+        const initContatForm = () => {
+            const contactForm = document.getElementById('contactForm');
+            contactForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+        
+                const nombre = document.getElementById('nombre').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const mensaje = document.getElementById('mensaje').value.trim();
+        
+                let valid = true;
+        
+                // Validación del nombre
+                if (nombre === '') {
+                    document.getElementById('errorNombre').textContent = 'Por favor, ingresa tu nombre.';
+                    valid = false;
+                } else {
+                    document.getElementById('errorNombre').textContent = '';
+                }
+        
+                // Validación del email
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    document.getElementById('errorEmail').textContent = 'Por favor, ingresa un email válido.';
+                    valid = false;
+                } else {
+                    document.getElementById('errorEmail').textContent = '';
+                }
+        
+                // Validación del mensaje
+                if (mensaje === '') {
+                    document.getElementById('errorMensaje').textContent = 'Por favor, ingresa tu mensaje.';
+                    valid = false;
+                } else {
+                    document.getElementById('errorMensaje').textContent = '';
+                }
+        
+                // Si el formulario es válido, podrías enviar los datos a través de AJAX aquí
+                if (valid) {
+                    alert('¡Formulario enviado con éxito!');
+                    // Aquí podrías enviar los datos del formulario a través de AJAX
+                }
+            });
+        }
+        const scrollTop = () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    
     </script>
 </head>
 <body>

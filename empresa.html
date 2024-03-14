@@ -1,0 +1,192 @@
+<style>
+    .column {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+</style>
+<div class="column">
+    <style>
+        .company-description {
+            min-height: calc(100vh - 45px);
+            display: flex;
+            flex-direction: column;
+            padding: 64px 32px;;
+            align-items: center;
+            background: white;;
+            justify-content: center; 
+            gap: 32px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .company-description {
+                padding: 16px;
+                padding-TOP: 60px;
+            }
+
+
+        }
+
+        .company-description .logo {
+            object-fit: contain;
+            max-width: 350px;
+            max-height: 350px;
+            width: 100%;
+            margin-bottom: 32px;
+        }
+
+        .company-description .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+
+        }
+        .company-description .dscription-card {
+            gap: 32px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .company-description .description-heading {
+            text-align: center;
+            font-weight: 400;
+            font-size: 30px;
+            max-width: 1300px;
+            padding: 0 32px;
+        }
+    
+        .company-description .tagline {
+            font-size: 24px;
+            text-align: center;
+            line-height: 42px;
+            max-width: 1300px;
+            padding: 0 32px;
+            font-family: "Truculenta", sans-serif;
+        }
+
+        @media screen and (max-width: 600px) {
+            .company-description .description-heading {
+                font-size: 18px;
+            }
+        
+            .company-description .tagline {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            .company-description .tagline {
+                padding: 0;
+            }
+        }
+    </style>
+    <div class="company-description">
+        <div class="dscription-card">
+            <img class="logo" src="./assets/logo.png" alt="">
+            <h3 class="description-heading">Hielo Chichén Itzá</h3>
+            <p class="tagline">
+                En Hielo Chichén Itzá, no solo vendemos hielo, creamos experiencias. Nuestro equipo está enfocado en cuidar cada detalle para garantizar que recibas el mejor producto. No seguimos tendencias, establecemos estándares.
+            </p>
+        </div>
+        <div class="dscription-card">
+            <h3 class="description-heading">Misión</h3>
+            <p class="tagline">
+                En Hielo Chichén Itzá estamos comprometidos a proporcionar productos de hielo de la más alta calidad, refrescando momentos y creando experiencias memorables para nuestros clientes. Nos esforzamos por superar las expectativas en cada interacción, garantizando la satisfacción y fidelidad de quienes confían en nosotros para sus necesidades de refrigeración.
+            </p>
+        </div>
+        <div class="dscription-card">
+            <h3 class="description-heading">Visión</h3>
+            <p class="tagline">
+                Ser reconocidos como líderes en la industria de productos de hielo, innovando constantemente para ofrecer soluciones de enfriamiento excepcionales que se integren perfectamente en la vida cotidiana de las personas. Aspiramos a expandir nuestra presencia a nivel nacional e internacional, siendo referentes en calidad, servicio al cliente y responsabilidad social.
+            </p>
+        </div>
+    </div>
+    
+    <style>
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .contact .map {
+            min-width: 320px;
+            min-height: 400px;
+            flex: 1;
+        }
+        .contact .email {
+            min-width: 320px;
+            padding: 32px;
+            gap: 32px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact .email h2 {
+            font-size: 30px;
+            text-align: center;
+            color: var(--accentColor2);
+        }
+        .contact .email form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact .email form label{
+            color: var(--accentColor2);
+            
+        }
+        .contact .email input[type="text"],
+        .contact .email textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            margin-bottom: 16px;;
+    
+        }
+        .contact .email input[type="text"] {
+        }
+        .contact .email input[type="submit"] {
+            background-color: var(--accentSecondaryColor);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .contact .email input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .contact .email .error {
+            color: red;
+        }
+    </style>
+    <div class="contact">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1139.9798333289068!2d-89.58437466026542!3d20.98215800053171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5670d92027f6a5%3A0xacc17af5b173e522!2sC.%20Cuarenta%20Y%20Ocho%2C%20Emiliano%20Zapata%20Oriente%2C%20M%C3%A9rida%2C%20Yuc.!5e0!3m2!1ses-419!2smx!4v1710379400914!5m2!1ses-419!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="email">
+            <h2>!Envíanos un e-mail!</h2>
+            <form id="contactForm" action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre.." required>
+                <div class="error" id="errorNombre"></div>
+        
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Tu email.." required>
+                <div class="error" id="errorEmail"></div>
+        
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje.." style="height:200px" required></textarea>
+                <div class="error" id="errorMensaje"></div>
+        
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+   
+</script>
