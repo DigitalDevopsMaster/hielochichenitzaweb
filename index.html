@@ -19,8 +19,11 @@
         }
     </style>
     <script>
-        const test = () => {
-            console.log('clik');
+        const scrollNext = (next) => {
+            const nextNode = document.querySelector(`.${next}`)
+            const top = nextNode.offsetTop - 45
+            window.scrollTo({ top, behavior: 'smooth' });
+
         }
         const initContatForm = () => {
             const contactForm = document.getElementById('contactForm');

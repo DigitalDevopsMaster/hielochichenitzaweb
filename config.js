@@ -1,8 +1,8 @@
-import { initScrollIntegration, initV1 } from "http://lib.digitaldevops.com.mx/v1.js";
-// import { initScrollIntegration, initV1 } from "../vendor/v1.js";
+import { initScrollIntegration, initV1 } from "http://lib.digitaldevops.com.mx/v1.1.js";
+// import { initScrollIntegration, initV1 } from "../vendor/v1.1.js";
 
 initV1({
-  style: 'webLayout',
+  style: 'web-layout-v1',
   contactInfo: {
     companyName: "Hielo Chichén Itzá",
     email: "hielochichenitza@email.com",
