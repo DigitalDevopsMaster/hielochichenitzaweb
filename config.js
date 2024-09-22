@@ -1,5 +1,5 @@
-import { initScrollIntegration, initV1 } from "http://lib.digitaldevops.com.mx/v1.1.js";
-// import { initScrollIntegration, initV1 } from "../vendor/v1.1.js";
+//import { initScrollIntegration, initV1 } from "./v1.1.js";
+import { initScrollIntegration, initV1 } from "./v1.1.js";
 
 initV1({
   style: 'web-layout-v1',
